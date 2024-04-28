@@ -45,10 +45,22 @@ const lodingcards=()=>{
         </div>
     `
 }
-async function initialize(type) {   
+function checkClasslist(ids){
+    const sb=document.getElementsByClassName("sb")
+    for (let i = 0; i < sb.length; i++) {
+        const element = sb[i];
+        element.classList.remove("sactive")
+        if (i==ids) {
+            element.classList.add("sactive")
+        }
+        
+    }
+}
+async function initialize(type,ids) {   
     lodingcards()
-    const data = await sortedToType(type);
-
+    checkClasslist(ids)
+    const data = await sortedToType(type); 
+    
     cardsRenderUi(data);
 }
 
@@ -121,7 +133,7 @@ async function renderBasket() {
         basketZone.innerHTML = item;
     } else {
         cout.style.display="none"
-        basketZone.innerHTML = `			<p>No products in the cart.</p>`;
+        basketZone.innerHTML = `<p>No products in the cart.</p>`;
     }
 }
 
@@ -144,4 +156,4 @@ function removeFromBasket(id){
 }
 
 renderBasket()
-initialize("ALL");
+initialize("ALL",0);

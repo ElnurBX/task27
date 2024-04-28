@@ -1,104 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     padding: 0 92px 0 82px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
-    padding: 45px ;
+    padding: 45px;
     height: 25px;
 }
-.logo img{
+
+.logo img {
     height: 25px;
 }
-nav >ul{
+
+nav>ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
-nav >ul >li{
+
+nav>ul>li {
     padding: 47px 25px;
     line-height: 22px;
     font-size: 12px;
     position: relative;
 }
-nav >ul >li:hover::before{
-    width:calc(100% - 50px);
+
+nav>ul>li:hover::before {
+    width: calc(100% - 50px);
 }
-nav >ul >li::before{
+
+nav>ul>li::before {
     transition: 0.2s ease-in-out 0s;
     content: "";
     position: absolute;
     width: 0;
     height: 1px;
-    background-color:  #000;
+    background-color: #000;
     bottom: 40%;
     box-sizing: border-box;
 
 }
-.actives{
+
+.actives {
     position: relative;
 }
-.actives::before{
+
+.actives::before {
     transition: 0.2s ease-in-out 0s;
     content: "";
     position: absolute;
-    width:calc(100% - 50px);
+    width: calc(100% - 50px);
     height: 1px;
-    background-color:  #000;
+    background-color: #000;
     bottom: 40%;
     box-sizing: border-box;
 }
-.inner ul li{
-    width:auto;
+
+.inner ul li {
+    width: auto;
     position: relative;
     padding: 15px;
 }
-.inner ul li:hover::before{
-    position: absolute; 
-    width:calc(100% - 52px);
+
+.inner ul li:hover::before {
+    position: absolute;
+    width: calc(100% - 52px);
 }
-.inner ul li::before{
+
+.inner ul li::before {
     transition: 0.2s ease-in-out 0s;
     content: "";
     position: absolute;
     width: 0;
     height: 1px;
-    background-color:  #737373;
+    background-color: #737373;
     bottom: 30%;
     box-sizing: border-box;
 
 }
-.activeinner{
+
+.activeinner {
     position: relative;
-    
+
 }
-.activeinner::before{
+
+.activeinner::before {
     content: "";
     position: absolute;
-    width:calc(100% - 50px);
+    width: calc(100% - 50px);
     height: 1px;
-    background-color:  #737373;
+    background-color: #737373;
     bottom: 30%;
     box-sizing: border-box;
 }
 
-.secret{
+.secret {
     background: #fff;
     left: 0;
     position: absolute;
@@ -106,26 +123,31 @@ nav >ul >li::before{
     width: 210px;
     z-index: 997;
 }
-.secret .inner{
+
+.secret .inner {
     height: 0px;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .03);
     height: 0;
- 
+
 }
-.secret .inner ul{
+
+.secret .inner ul {
     padding: 0;
 }
-.inner ul li{
+
+.inner ul li {
     padding: 8px 26px;
 }
-.inner ul li a{
+
+.inner ul li a {
     color: #737373;
     text-decoration: none;
 }
-nav >ul >li:hover .secret .inner{
+
+nav>ul>li:hover .secret .inner {
     height: 100%;
     visibility: visible;
     opacity: 1;
@@ -133,7 +155,7 @@ nav >ul >li:hover .secret .inner{
     overflow: visible;
 }
 
-.basket{
+.basket {
     position: relative;
     align-items: center;
     display: flex;
@@ -144,16 +166,18 @@ nav >ul >li:hover .secret .inner{
 }
 
 
-.search__button{
+.search__button {
     width: 20px;
     height: 20px;
     background: transparent;
     border: 0;
 }
-.search__button:hover{
+
+.search__button:hover {
     color: #f34f3f;
 }
-.serchbar{
+
+.serchbar {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .03);
     position: absolute;
     top: 100px;
@@ -162,34 +186,41 @@ nav >ul >li:hover .secret .inner{
     padding: 10px;
     background: #fff;
 }
-.serchbar input{
+
+.serchbar input {
     border: 0;
     outline: 0;
 }
-.serchbar button{
+
+.serchbar button {
     border: 0;
     outline: 0;
     background-color: transparent;
     color: #737373;
 
 }
-.serchbar button:hover{
+
+.serchbar button:hover {
 
     color: #000;
 }
-.d-n{
+
+.d-n {
     display: none;
-}.basketmain{
+}
+
+.basketmain {
     position: relative;
 }
-.basketdrop{
+
+.basketdrop {
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 250px;
     min-height: 100px;
-    right:  25px;
+    right: 25px;
     top: 100px;
     position: absolute;
     overflow: hidden;
@@ -199,28 +230,31 @@ nav >ul >li:hover .secret .inner{
     z-index: 999;
     background: #fff;
 }
-#cout{
+
+#cout {
     width: 13px;
     height: 13px;
     background: #f34f3f;
     position: absolute;
     top: 0;
     left: 8px;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     display: none;
     align-items: center;
     justify-content: center;
-    font-size:8px;
+    font-size: 8px;
     color: #fff;
 }
-.x{
+
+.x {
     opacity: 1 !important;
     visibility: visible !important;
     overflow: visible !important;
 }
+
 /* ? carousel */
-.caruselDiscription{
+.caruselDiscription {
     position: absolute;
     width: 35%;
     left: 10%;
@@ -228,38 +262,44 @@ nav >ul >li:hover .secret .inner{
     font-family: "Playfair Display";
 }
 
-.caruselDiscription>span{
+.caruselDiscription>span {
     font-size: 41px;
     font-weight: 400;
 }
-.caruselDiscription p{
+
+.caruselDiscription p {
     color: rgb(109, 106, 106);
     font-weight: 400;
     font-size: 17px;
     font-family: "Lora";
 
 }
+
 /* ? product sort */
-.sorthead{
+.sorthead {
     padding: 57px 0 0 0;
     justify-content: space-between;
     position: relative;
 }
-.sorthead ul{
+
+.sorthead ul {
     display: flex;
     gap: 10px;
 }
-.sorthead li{
+
+.sorthead li {
     margin-right: 32px;
     font-size: 12px;
 }
-.mkdf-pl-ordering-inner ul{
+
+.mkdf-pl-ordering-inner ul {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
-.mkdf-pl-ordering{
+
+.mkdf-pl-ordering {
     position: absolute;
     right: 10pc;
     top: 100px;
@@ -269,11 +309,13 @@ nav >ul >li:hover .secret .inner{
     border-radius: 5px;
     z-index: 100;
 }
-.mkdf-pl-ordering-inner ul a{
+
+.mkdf-pl-ordering-inner ul a {
     color: #000;
     text-decoration: none;
 }
-.sortdawnmenu{
+
+.sortdawnmenu {
     background-color: #fff;
     overflow: hidden;
     visibility: hidden;
@@ -281,91 +323,132 @@ nav >ul >li:hover .secret .inner{
 }
 
 /* ?card */
-.pro__cards{
+.pro__cards {
     display: flex;
     flex-wrap: wrap;
 }
-.pro__card{
+
+.pro__card {
     text-align: center;
     width: 275px;
     padding: 0 20px;
     margin-bottom: 40px;
 }
-.pro__card img{
+
+.pro__card img {
+    transition: all ease 0.4s;
     width: 100%;
 }
-.pro__card__info__cut{
+
+.pro__card__info__cut {
     width: 245px;
     overflow: hidden;
     height: 70px;
 }
-.pro__card__info{
-    transform: translate(-50% , 0);
-    transition: all ease-in-out 0.4s;
+
+.pro__card__info {
+    transform: translate(-50%, 0);
+    transition: all ease-in-out 0.6s;
     margin-top: 23px;
     width: 200%;
     display: flex;
     overflow-x: hidden;
     position: relative;
 }
-.pro__card__info__main{
+
+.pro__card__info__main {
     width: 245px;
 }
-.pro__card__info__add{
-    width:245px;
+
+.pro__card__info__add {
+    width: 245px;
 }
-.pro__card__info__add button{
+
+.pro__card__info__add button {
     background: transparent;
     border: 0;
 }
-.pro__card:hover .pro__card__info{
-   transform: translate(0% , 0);
+
+.pro__card:hover .pro__card__info {
+    transform: translate(0%, 0);
 }
-.pro__card:hover img{
+
+.pro__card:hover img {
     transform: scale(1.06);
 }
-.lodingCards{
+
+.lodingCards {
     height: 400px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.basketcard{
+
+.basketcard {
     width: 100%;
     padding: 15px;
     justify-content: space-between;
     gap: 10px;
 }
-.basketcard button{
+
+.basketcard button {
     color: #f34f3f;
     background: transparent;
     border: 0;
 }
-.basketcard span,h6{
+
+.basketcard span,
+h6 {
     font-size: 12px;
     margin: 1px;
 }
-.basketinformativ{
+
+.basketinformativ {
     padding: 15px;
 
 }
+
 .btns {
     display: flex;
     gap: 5px;
 }
-.btns button{
+
+.btns button {
     border: 0;
-    color:#fff;
-    width:97px;
+    color: #fff;
+    width: 97px;
     height: 40px;
-    padding:0 18px;
-    font-size:9px;
+    padding: 0 18px;
+    font-size: 9px;
 }
-.btns-o{
+
+.btns-o {
     background-color: #f34f3f;
 }
-.btns-b{
+
+.btns-b {
     background: #000;
 
+}
+
+.sactive {
+    color: #f34f3f;
+}
+
+@keyframes slider {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+.carousel-item >img{
+    z-index: 1;
+    animation: slider 5s infinite;
+}
+.caruselDiscription{
+    z-index: 100;
 }

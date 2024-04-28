@@ -14,3 +14,18 @@ sortmoney.addEventListener('mouseenter', (e)=>{
     const sortdawnmenu=document.getElementById("sortdawnmenu")
     sortdawnmenu.classList.toggle("x")
 })
+
+// *auto carusel
+const carouselItem=document.getElementsByClassName("carousel-item");
+let sliderCount=0
+function changeSlide(){
+    sliderCount++
+    let change=sliderCount%3 
+    console.log(change);
+    const activeItem = document.querySelector('.carousel-item.active');
+    if (activeItem) {
+        activeItem.classList.remove("active");
+    }
+    carouselItem[change].classList.add("active")
+}
+const intervalId = setInterval(changeSlide, 5000);
