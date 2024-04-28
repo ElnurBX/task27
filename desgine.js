@@ -16,13 +16,13 @@ sortmoney.addEventListener('mouseenter', (e)=>{
 })
 
 // *auto carusel
-const carouselItem=document.getElementsByClassName("carousel-item");
+const carouselItem=document.getElementsByClassName(" item-x");
 let sliderCount=0
 function changeSlide(){
     sliderCount++
     let change=sliderCount%3 
     console.log(change);
-    const activeItem = document.querySelector('.carousel-item.active');
+    const activeItem = document.querySelector('.item-x.active');
     if (activeItem) {
         activeItem.classList.remove("active");
     }

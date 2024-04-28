@@ -445,10 +445,203 @@ h6 {
         transform: scale(1.1);
     }
 }
-.carousel-item >img{
+.item-x >img{
     z-index: 1;
     animation: slider 5s infinite;
 }
 .caruselDiscription{
     z-index: 100;
+}
+.videoSection{
+    padding: 120px 0;
+    background-color: #f7f7f7;
+}
+.videoSectionDiscript{
+        padding: 0 0 0 70px;
+}
+.videoSectionDiscript h3{
+    font-size: 39px;
+    line-height:55px ;
+    font-family: "Playfair Display";
+}
+.videoSectionDiscript h3 span{
+    color: #f34f3f;
+}
+.videoSectionDiscript p{
+    color: 212529;
+    font-size: 17px;
+}
+.videoSectionDiscript ul{
+    padding: 0;
+    color: #6d6a6a;
+}
+.videoSectionImg{
+    position: relative;
+}
+.videoSectionImg a{
+    position: absolute;
+    z-index: 905;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width:100px ;
+    height:100px;
+    border-radius: 50%;
+    background: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #f34f3f;
+}
+.videoSectionImg img{
+    width: 100%;
+    z-index: 1;
+}
+.FlowerExperts{
+    padding: 100px 0;
+}
+.FlowerExpertsDiscript{
+    text-align: center;
+    margin-bottom:30px ;
+}
+.FlowerExpertsExperts{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.Expert h6{
+    margin: 10px;
+}
+.Expert span{
+    color: #6d6a6a;
+    font-size: 12px;
+}
+.xsection{
+    padding: 185px 0;
+    background-image: url(https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.xsectionmain{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+.xsectionmain h4{
+    font-size: 30px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+.xsectionmaininput {
+    display: flex;
+    width: 60%;
+}
+.xsectionmaininput input{
+
+    font-size: 12px;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 19px 18px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    outline: 0;
+
+}
+
+.xsectionmaininput button{
+    height: 60px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #f34f3f;
+    color: #e8e8e8;
+}
+
+.formourblog{
+    padding-top: 98px ;
+    padding-bottom: 81px ;
+    background-color: #f8f8f8;
+}
+.formourblogcards{
+    display: flex;
+
+
+}
+.formourblogcard{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.formourblogcard p{
+    color:#999;
+    font-size: 12px;
+}
+.formourblog img{
+    width: 100%;
+}
+.formourblogdiscript{
+    text-align: center;
+}
+
+.carusel2{
+    padding: 90px 0;
+}
+.item-y{
+    text-align: center;
+}
+.item-y p{
+    width: 500px;
+    margin:30px auto;
+    font-size: 24px;
+    font-family: Lora, serif;
+    font-style: italic; 
+    
+}footer{
+
+    background-color: #fefaf3;
+}
+.footerNav{
+    padding: 73px 0;
+    display: flex;
+}
+.footerNav h5{
+    font-size: 12px;
+}
+.footerNav ul{
+    padding: 0;
+}
+.footerNav ul li a{
+    text-decoration: none;
+    color: #8b8b8b;
+    font-size: 12px;
+}
+.footerBottom{
+    display: flex;
+    padding: 10px;
+    color: #8b8b8b;
+    justify-content: space-between;
+}
+
+.footerBottom a{
+    text-decoration: none;
+    color: #8b8b8b;
+    margin-right: 10px;
+}
+.footerBottom a:hover{
+    color: #f34f3f;
 }
